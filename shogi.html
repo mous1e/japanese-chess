@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <link rel="stylesheet" type="text/css" href="shogi.css" />
+  <title>将棋を何が何でも作る</title>
+</head>
+<body>
+  <canvas id="cnvs" width="1080px" height="1080px"></canvas>
+  <script src="./shogi.js"></script>
+  <script>
+      var ctx = document.getElementById("cnvs").getContext('2d');
+      Syougi.initShogi(ctx);
+  </script>
+
+  </style>
+</body>
+
+</html>
